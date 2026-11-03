@@ -47,7 +47,7 @@ Live Demo [https://udalovivanw.github.io/landing-keepsake/](https://udalovivanw.
 - **Newsletter Form**: підтримка станів Default, Focus (`border: 1px solid var(--color-teal)`), Error (`:user-invalid` + `:has()`) та Success (приховання форми через `:target`).
 - **Hover & Focus на картках**: оверлей показується при `:hover`, `:focus-visible` та `:focus-within`.
 - **Мобільне меню та фільтрація**: реалізовано без JavaScript - використано `checkbox` / `radio` та псевдоклас `:checked`.
-- **Кнопка «Вгору»**: `position: fixed`, розмір 44×44px, доступна на всіх брекпоінтах.
+- **Кнопка «Вгору»**: `position: fixed`, розмір 44×44px, доступна тільки на мобільній версії.
 
 ---
 
