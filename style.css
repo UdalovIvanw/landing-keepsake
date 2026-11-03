@@ -886,6 +886,7 @@ ul {
     border-radius: 50%;
     background-color: var(--color-bg-light);
     color: var(--color-text-dark);
+    flex-shrink: 0;
 }
 
 .service-title {
