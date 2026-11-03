@@ -958,7 +958,7 @@ ul {
     min-height: 258px;
 
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: center;
 }
 
 .stat-item {
