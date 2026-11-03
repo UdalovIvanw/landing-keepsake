@@ -379,6 +379,7 @@ ul {
     gap: 8px;
     padding: 20px;
     background-color: var(--color-bg-light);
+    margin-top: 60px;
 }
 
 .mobile-nav-info-label {
