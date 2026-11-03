@@ -415,9 +415,11 @@
                 <p class="newsletter-desc">Fresh case studies and design notes, once a month.</p>
 
                 <form class="newsletter-form" action="#newsletter-success" method="get">
-                    <input type="email" id="newsletter-email" name="email" class="input-field" placeholder="Your email address" required aria-describedby="email-error">
-                    <button type="submit" class="btn btn-primary btn-subscribe">SUBSCRIBE</button>
-                    <p class="field-error" id="email-error">Please enter a valid email address.</p>
+                    <div class="input-group">
+                        <input type="email" id="newsletter-email" name="email" class="input-field" placeholder="Your email address" required aria-describedby="email-error">
+                        <button type="submit" class="btn btn-primary btn-subscribe">SUBSCRIBE</button>
+                        <p class="field-error" id="email-error">Please enter a valid email address.</p>
+                    </div>
                     <div class="consent-row">
                         <input type="checkbox" id="consent-check" name="consent" class="consent-checkbox" required>
                         <label for="consent-check" class="consent-text">I agree to the privacy policy</label>
