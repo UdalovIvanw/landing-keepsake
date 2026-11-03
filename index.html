@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepsake | Digital &amp; Branding Agency</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Open+Sans:wght@300;400;700&amp;family=Oswald:wght@300;400;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="header">
+    <div class="container header-container">
+        <a href="#top" class="logo" aria-label="Keepsake - home">
+            <span class="logo-mark" aria-hidden="true">K</span>
+            <span class="logo-text" aria-hidden="true">eepsake</span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+        <label for="menu-toggle" class="burger-btn">
+            <svg class="icon icon-burger" viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="icon icon-close" viewBox="0 0 24 24" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </label>
+
+        <nav class="nav" id="main-nav" aria-label="Main navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#top" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About us</a></li>
+                <li class="nav-item"><a href="#works" class="nav-link">Our works</a></li>
+                <li class="nav-item"><a href="#journal" class="nav-link">Journal</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary nav-mobile-btn">Contact us</a>
+                <button type="button" class="btn-favourites" aria-label="Favourites">
+                    <svg class="icon icon-heart" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    <span class="btn-fav-text">Favourites</span>
+                </button>
+            </div>
+
+            <div class="mobile-nav-info">
+                <p class="mobile-nav-info-label">Get in touch</p>
+                <p class="mobile-nav-info-text">hello@keepsake.agency</p>
+                <p class="mobile-nav-info-text">+44 20 7946 0920</p>
+
+                <div class="socials nav-socials">
+                    <a href="#" class="social-icon social-rss" aria-label="RSS">rss</a>
+                    <a href="#" class="social-icon social-f" aria-label="Facebook">f</a>
+                    <a href="#" class="social-icon social-tw" aria-label="Twitter">tw</a>
+                    <a href="#" class="social-icon social-dr" aria-label="Dribbble">dr</a>
+                    <a href="#" class="social-icon social-p" aria-label="Pinterest">p</a>
+                </div>
+            </div>
+
+
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1 class="hero-title">We're Keepsake, a digital &amp; branding agency</h1>
+            <p class="hero-desc">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+            <div class="hero-actions">
+                <a href="#works" class="btn btn-hero">SEE OUR WORK</a>
+                <a href="#contact" class="btn btn-secondary">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section class="works section" id="works">
+        <div class="container">
+            <input type="radio" name="portfolio-filter" id="filter-all" class="filter-radio" checked>
+            <input type="radio" name="portfolio-filter" id="filter-branding" class="filter-radio">
+            <input type="radio" name="portfolio-filter" id="filter-identity" class="filter-radio">
+            <input type="radio" name="portfolio-filter" id="filter-print" class="filter-radio">
+            <input type="radio" name="portfolio-filter" id="filter-web" class="filter-radio">
+            <input type="radio" name="portfolio-filter" id="filter-motion" class="filter-radio">
+
+            <div class="works-head">
+                <h2 class="section-title">Our awesome works</h2>
+                <div class="filter-chips">
+                    <label for="filter-all" class="chip">All</label>
+                    <label for="filter-branding" class="chip">Branding</label>
+                    <label for="filter-identity" class="chip">Identity</label>
+                    <label for="filter-print" class="chip">Print</label>
+                    <label for="filter-web" class="chip">Web</label>
+                    <label for="filter-motion" class="chip">Motion</label>
+                </div>
+            </div>
+
+            <div class="works-grid">
+                <article class="work-card" data-category="branding" tabindex="0">
+                    <img src="images/1.webp" alt="Mockup Tag branding project" class="card-img" width="357" height="282">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Mockup Tag</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Branding</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="print" tabindex="0">
+                    <img src="images/1.webp" alt="Piece Paper print project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Piece Paper</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Print</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="identity" tabindex="0">
+                    <img src="images/1.webp" alt="Vinyl Branding identity project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Vinyl Branding</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Identity</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="print" tabindex="0">
+                    <img src="images/1.webp" alt="Editorial Print project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Editorial Print</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Print</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="web" tabindex="0">
+                    <img src="images/1.webp" alt="Profile UI web design project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Profile UI</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Web</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="branding" tabindex="0">
+                    <img src="images/1.webp" alt="Brand Assets branding project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Brand Assets</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Branding</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="identity" tabindex="0">
+                    <img src="images/1.webp" alt="WallSt Identity project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">WallSt Identity</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Identity</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="web" tabindex="0">
+                    <img src="images/1.webp" alt="Studio Website web design project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Studio Website</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Web</span>
+                    </div>
+                </article>
+
+                <article class="work-card" data-category="motion" tabindex="0">
+                    <img src="images/1.webp" alt="Motion Reel video project" class="card-img" width="357" height="282" loading="lazy">
+                    <div class="hover-overlay">
+                        <span class="plus-icon" aria-hidden="true"><span class="plus-icon" aria-hidden="true"><svg class="icon icon-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg></span></span>
+                        <h3 class="card-title">Motion Reel</h3>
+                        <div class="card-divider"></div>
+                        <span class="card-cat">Motion</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="load-more">
+                <button type="button" class="btn btn-secondary btn-load-more">Load more works</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section">
+        <div class="container cta-container">
+            <h2 class="cta-title">Would you love to work with us?</h2>
+            <a href="#contact" class="btn btn-primary btn-cta">
+                <svg class="icon icon-mail" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Contact us
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section" id="about">
+        <div class="container">
+            <h2 class="section-title">What do we do</h2>
+            <p class="section-desc">We are a small team of designers and makers who help brands look their best online and offline.</p>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon-bg">
+                        <svg class="icon icon-web" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web design</h3>
+                    <p class="service-text">Responsive sites and product interfaces that look sharp on every screen.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon-bg">
+                        <svg class="icon icon-motion" viewBox="0 0 24 24" aria-hidden="true">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Motion video</h3>
+                    <p class="service-text">Explainers, logo animations and social clips that bring brands to life.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon-bg">
+                        <svg class="icon icon-print" viewBox="0 0 24 24" aria-hidden="true">
+                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                            <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Print design</h3>
+                    <p class="service-text">Posters, packaging and stationery prepared to be printed right.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon-bg">
+                        <svg class="icon icon-print" viewBox="0 0 24 24" aria-hidden="true">
+                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                            <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Illustration</h3>
+                    <p class="service-text">Custom illustrations and icon sets in a style that is yours alone.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <p class="stat-number">120+</p>
+                    <p class="stat-label">Projects done</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number">8</p>
+                    <p class="stat-label">Years in craft</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number">64</p>
+                    <p class="stat-label">Happy clients</p>
+                </div>
+                <div class="stat-item">
+                    <p class="stat-number">15</p>
+                    <p class="stat-label">Design awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal -->
+    <section class="journal section" id="journal">
+        <div class="container">
+            <h2 class="section-title journal-title-box">From the journal</h2>
+            <p class="section-desc">Notes on process, case studies and things that inspire us.</p>
+
+            <div class="journal-grid">
+                <article class="journal-card">
+                    <div class="journal-thumb">
+                        <img src="images/2.webp" alt="Journal article preview" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="journal-content">
+                        <p class="journal-meta">Oct 13, 2026 &nbsp;/&nbsp; Identity</p>
+                        <h3 class="journal-title">Sollicitudin tortor inceptos</h3>
+                        <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a href="#" class="read-more">Read more <svg class="icon icon-arrow-up" viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg></a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-thumb">
+                        <img src="images/2.webp" alt="Branding case study preview" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="journal-content">
+                        <p class="journal-meta">Oct 23, 2026 &nbsp;/&nbsp; Branding</p>
+                        <h3 class="journal-title">Amet inceptos fringilla fusce</h3>
+                        <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a href="#" class="read-more">Read more <svg class="icon icon-arrow-up" viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg></a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-thumb">
+                        <img src="images/2.webp" alt="Identity design article preview" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="journal-content">
+                        <p class="journal-meta">Sep 19, 2026 &nbsp;/&nbsp; Identity</p>
+                        <h3 class="journal-title">Cursus malesuada justo</h3>
+                        <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a href="#" class="read-more">Read more <svg class="icon icon-arrow-up" viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg></a>
+                    </div>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-thumb">
+                        <img src="images/2.webp" alt="Branding notes preview" width="150" height="150" loading="lazy">
+                    </div>
+                    <div class="journal-content">
+                        <p class="journal-meta">Sep 27, 2026 &nbsp;/&nbsp; Branding</p>
+                        <h3 class="journal-title">Ornare cursus bibendum purus</h3>
+                        <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                        <a href="#" class="read-more">Read more <svg class="icon icon-arrow-up" viewBox="0 0 24 24" aria-hidden="true">
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients & kind words -->
+    <section class="clients section">
+        <div class="container">
+            <h2 class="section-title">Clients &amp; kind words</h2>
+            <p class="section-desc">Some of the teams that trusted us with their brands.</p>
+
+            <ul class="client-logos">
+                <li class="client-logo logo-nordly">NORDLY</li>
+                <li class="client-logo logo-halcyon">Halcyon</li>
+                <li class="client-logo logo-arco">ARCO</li>
+                <li class="client-logo logo-pinewood">pinewood</li>
+                <li class="client-logo logo-vela">VELA</li>
+                <li class="client-logo logo-ostra">ostra</li>
+            </ul>
+
+            <blockquote class="testimonial">
+                <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+                <p class="testimonial-text">Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.</p>
+                <footer class="testimonial-author">
+                    <div class="author-info">
+                        <div class="author-avatar" aria-hidden="true">OM</div>
+                        <div class="author-details">
+                            <p class="author-name">Olena Marchenko</p>
+                            <p class="author-role">Marketing Lead, Nordly</p>
+                        </div>
+                    </div>
+                    <div class="slider-dots" aria-hidden="true">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </footer>
+            </blockquote>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer-top">
+            <div class="newsletter-block">
+                <h2 class="footer-heading">NEWSLETTER</h2>
+                <p class="newsletter-desc">Fresh case studies and design notes, once a month.</p>
+
+                <form class="newsletter-form" action="#newsletter-success" method="get">
+                    <input type="email" id="newsletter-email" name="email" class="input-field" placeholder="Your email address" required aria-describedby="email-error">
+                    <button type="submit" class="btn btn-primary btn-subscribe">SUBSCRIBE</button>
+                    <p class="field-error" id="email-error">Please enter a valid email address.</p>
+                    <div class="consent-row">
+                        <input type="checkbox" id="consent-check" name="consent" class="consent-checkbox" required>
+                        <label for="consent-check" class="consent-text">I agree to the privacy policy</label>
+                    </div>
+                </form>
+
+                <div class="newsletter-success" id="newsletter-success" role="status">
+                    <div class="success-box">
+                        <svg class="success-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="var(--color-teal)"/><path d="M8 12l3 3 5-5" stroke="#fff" stroke-width="2" fill="none"/></svg>
+                        <span>You're in! Check your inbox to confirm.</span>
+                    </div>
+                    <p class="success-subtext">One email a month. No spam, unsubscribe anytime.</p>
+                </div>
+            </div>
+
+            <div class="footer-links link-columns">
+                <div class="footer-col">
+                    <h2 class="footer-heading">Studio</h2>
+                    <ul class="footer-list">
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#works">Our works</a></li>
+                        <li><a href="#journal">Journal</a></li>
+                        <li><a href="#top">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2 class="footer-heading">Services</h2>
+                    <ul class="footer-list">
+                        <li><a href="#about">Web design</a></li>
+                        <li><a href="#about">Motion video</a></li>
+                        <li><a href="#about">Print design</a></li>
+                        <li><a href="#about">Illustration</a></li>
+                        <li><a href="#about">Brand strategy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 Keepsake. All rights reserved.</p>
+            <div class="socials">
+                <a href="#" class="social-icon social-rss" aria-label="RSS">rss</a>
+                <a href="#" class="social-icon social-f" aria-label="Facebook">f</a>
+                <a href="#" class="social-icon social-tw" aria-label="Twitter">tw</a>
+                <a href="#" class="social-icon social-dr" aria-label="Dribbble">dr</a>
+                <a href="#" class="social-icon social-p" aria-label="Pinterest">p</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#top" class="to-top-btn" aria-label="Back to top">
+    <svg class="icon icon-arrow-up" viewBox="0 0 24 24" aria-hidden="true">
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+</a>
+
+</body>
+</html>
